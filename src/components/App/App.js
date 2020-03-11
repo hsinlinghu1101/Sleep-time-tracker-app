@@ -18,8 +18,8 @@ function App() {
      <Route exact path='/' component={Landing}/>
      <Route path='/login' component={Login}/>
      <Route path='/register' component={Register}/>
-     <Route path='/home/:user_id' component={Home}/>
-     <Route path='/result/:user_id' component={Result}/>
+     <Route path='/user' component={Home}/>
+     <Route path='/data/:user_id' component={Result}/>
      <Route component={NotFound}/>
      </Switch>
      <Footer/>
