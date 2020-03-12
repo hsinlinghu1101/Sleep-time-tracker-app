@@ -2,7 +2,9 @@ import React from 'react'
 import NavBar from '../NavBar/NavBar'
 
 export default class Result extends React.Component{
-    render(){
+    
+  
+  render(){
         return(
             <main role="main">
             <header role="banner">

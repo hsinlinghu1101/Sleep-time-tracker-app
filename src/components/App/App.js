@@ -3,28 +3,33 @@ import { Route, Switch } from 'react-router-dom'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 import Landing from '../Landing/Landing'
-import Login from '../Login/Login'
-import Register from '../Register/Register'
-import Home from '../Home/Home'
-import Result from '../Result/Result'
+import LoginPage from '../Login/LoginPage'
+import RegisterationPage from '../Register/RegisterationPage'
+import HomePage from '../Home/HomePage'
+import ResultPage from '../Result/ResultPage'
 import NotFound from '../NotFound/NotFound'
 import './App.css';
 
-function App() {
+export default class App extends React.Component{
+  state={
+    user_name:''
+  }
+  render(){
   return (
     <div className="App">
      <Header />
      <Switch>
      <Route exact path='/' component={Landing}/>
-     <Route path='/login' component={Login}/>
-     <Route path='/register' component={Register}/>
-     <Route path='/user' component={Home}/>
-     <Route path='/data/:user_id' component={Result}/>
+     <Route path='/login' component={LoginPage}/>
+     <Route path='/register' component={RegisterationPage}/>
+     <Route path='/user' component={HomePage}/>
+     <Route path='/data/:user_id' component={ResultPage}/>
      <Route component={NotFound}/>
      </Switch>
      <Footer/>
     </div>
   );
 }
+}
 
-export default App;
+

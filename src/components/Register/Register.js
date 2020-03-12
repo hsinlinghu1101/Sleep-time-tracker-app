@@ -8,12 +8,13 @@ export default class Register extends React.Component{
         onRegisterationSuccess:() => {}
     }
 
-    state= { error: null }
+    state= { 
+        error: null, 
+    }
 
 
     handleNewUser=(event)=>{
         event.preventDefault();
-        
         const { user_name, user_age, password} = event.target
         
         this.setState({ error:null })
@@ -61,7 +62,7 @@ export default class Register extends React.Component{
                 </div>
                 <div>
                   <label htmlFor="password">Password</label>
-                  <input type="password" name='user_password' id='password' placeholder="password"  required/>
+                  <input type="password" name='password' id='password' placeholder="password"  required/>
                 </div>
                 
                 <button type='submit'>Sign Up</button>
