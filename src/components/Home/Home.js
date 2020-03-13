@@ -3,29 +3,30 @@ import DataAPiService from '../../Services/data-api-service';
 import NavBar from '../NavBar/NavBar'
 
 export default class Home extends React.Component{
-
+  
   static defaultProps={
     createDataSuccess:()=>{},
     name:''
   }
 
-  state={
-    error:null
-  }
+  state={error:null}
   
   handleRecordSubmit=(event)=>{
     event.preventDefault();
-    const{data_created, bed_time, wakeup_time }=event.target
+    const{data_created, bed_time, wakeup_time, data_wakeup }=event.target
+    
 
     DataAPiService.postData({
       data_created: data_created.value,
       bed_time: bed_time.value, 
-      wakeup_time: wakeup_time.value
-    }) 
+      wakeup_time: wakeup_time.value,
+      data_wakeup: data_wakeup.value
+    } ) 
 
     .then(data =>{
       data_created.value=''
       bed_time.value=''
+      data_wakeup.value=''
       wakeup_time.value=''
       this.props.createDataSuccess()
     })
@@ -34,7 +35,9 @@ export default class Home extends React.Component{
       this.setState({
         error:JSON.stringify(res.error)
       })
-    })
+    }
+    
+    )
       
   }
 

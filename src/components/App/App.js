@@ -53,8 +53,7 @@ export default class App extends React.Component{
      <Route exact path='/' component={Landing}/>
      <Route path='/login' component={LoginPage}/>
      <Route path='/register' component={RegisterationPage}/>
-     <Route path='/user/:user_id' render= {() => 
-      <HomePage name={user_name}/>}/>
+     <Route path='/user/:user_id' component= {HomePage}/>
      <Route path='/data/:user_id' render= {() => 
      <ResultPage name={user_name} date={date} />
      }/>
