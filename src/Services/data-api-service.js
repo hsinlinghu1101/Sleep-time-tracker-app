@@ -2,10 +2,10 @@ import TokenService from './token-service'
 import config from '../config'
 
 const DataAPiService={
-    getData(userId){
-        return fetch(`${config.API_ENDPOINT}/data/${userId}`, {
+    getData(){
+        return fetch(`${config.API_ENDPOINT}/data/my`, {
             headers:{
-                'authorization': `baerer ${TokenService.getAuthToken}`
+                'Authorization': `bearer ${TokenService.getAuthToken()}`
             }
         })
         .then(res =>

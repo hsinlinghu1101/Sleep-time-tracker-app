@@ -1,26 +1,19 @@
 import React from 'react'
-import NavBar from '../NavBar/NavBar'
 
-export default class Result extends React.Component{
+
+
+export default function Result(props){
     
-  
-  render(){
+   
         return(
-            <main role="main">
-            <header role="banner">
-              <NavBar/>  
-              <h1>Daily Sleep Hours</h1>
-            </header>
-            <section>
-              
-              <h2>'2/20/2020' - '8' hours of sleep</h2>
-              <p>message: Great! You had enough sleep!</p>
-              
+            <section>      
+              <h2>'{props.date}' - You got '{props.hours}' hours of sleep </h2>
+              <p>{props.message}</p>
               <button>Edit</button>
               <button>Delete</button>
             </section>
            
-          </main> 
+          
         )
-    }
+    
 }

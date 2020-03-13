@@ -33,7 +33,7 @@ export default class Login extends React.Component{
       TokenService.saveAuthToken(data.authToken)
      user_name.value=''
      password.value=''
-     this.props.onLoginSuccess()
+     this.props.onLoginSuccess(data.user_id)
     })
     .catch(res =>{
       this.setState({
@@ -55,7 +55,7 @@ export default class Login extends React.Component{
             {error && <p className='red'>{error}</p>}
                 <div>
                   <label htmlFor="name">Name</label>
-                  <input placeholder='Name' type="text" name='user_name' id='name'  required />
+                  <input placeholder='Name' type="text" name='user_name' id='name' required />
                 </div>
                 <div>
                   <label htmlFor="password">Password</label>
