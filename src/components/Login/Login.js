@@ -12,17 +12,29 @@ export default class Login extends React.Component{
 
    state={
      error:null,
+     name:''
    }
 
-    
+  /*sendName=(event)=>{
+    this.setState({
+      name:event.target.name.value
+    })
+  }*/
+
+   sendName=(name)=>{
+    this.setState({
+      name
+    })
+      name = this.props.getName
+    }
 
     handleSubmit=(e)=>{
       e.preventDefault();
     this.setState({error:null})
+    
      const{ user_name, password}=e.target
 
-    /* const token = TokenService.makeBasicAuthToken(user_name.value, password.value)
-    TokenService.saveAuthToken(token)*/
+    
     AuthApiService.postLogin({
       user_name:user_name.value, 
       password:password.value
@@ -45,7 +57,7 @@ export default class Login extends React.Component{
 
     
     render(){
-      const { error }= this.state
+      const { error, name }= this.state
         return(
             <main role="main">
             <header>
@@ -55,7 +67,7 @@ export default class Login extends React.Component{
             {error && <p className='red'>{error}</p>}
                 <div>
                   <label htmlFor="name">Name</label>
-                  <input placeholder='Name' type="text" name='user_name' id='name' required />
+                  <input placeholder='Name' type="text" name='user_name' id='name' value={name} onChange={(e)=>this.sendName(e.target.value)} required />
                 </div>
                 <div>
                   <label htmlFor="password">Password</label>
