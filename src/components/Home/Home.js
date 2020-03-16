@@ -2,14 +2,20 @@ import React from 'react'
 import DataAPiService from '../../Services/data-api-service';
 import NavBar from '../NavBar/NavBar'
 
+
 export default class Home extends React.Component{
   
   static defaultProps={
     createDataSuccess:()=>{},
-    name:''
+    
   }
 
-  state={error:null}
+  state={
+    error:null,
+    data_wakeup:''
+  }
+
+ 
   
   handleRecordSubmit=(event)=>{
     event.preventDefault();
@@ -45,10 +51,11 @@ export default class Home extends React.Component{
     render(){
       const { error } = this.state
         return(
+         
             <main role="main">
             <header>
               <NavBar/>
-              <h1>Hi, {this.props.name} -Create New Record</h1>
+              <h1>Hi, {this.props.user_name} -Create New Record</h1>
               {error && <p>{error}</p>}
              
             </header>
@@ -72,6 +79,7 @@ export default class Home extends React.Component{
               </form>
             </section>
           </main>
+          
         )
     }
 }

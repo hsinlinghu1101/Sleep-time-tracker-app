@@ -15,7 +15,7 @@ const DataAPiService={
         )
     },
     postData( data_created, bed_time, wakeup_time){
-       // console.log(`bearer ${TokenService.getAuthToken()}`)
+       
       
         return fetch(`${config.API_ENDPOINT}/data`, {
             method: 'POST',
@@ -33,10 +33,22 @@ const DataAPiService={
             (!res.ok)
               ? res.json().then(e => Promise.reject(e))
               : res.json()           
-            )
-           
-            
-    }
+            )     
+     },
+     deleteData(dataId){
+         return fetch(`${config.API_ENDPOINT}/data/${dataId}`, {
+             method:'DELETE',
+             headers:{
+                 'content-type':'application/json',
+                 'authorization':`bearer ${TokenService.getAuthToken()}`,
+             },  
+         })
+         .then(res =>
+            (!res.ok)
+              ? res.json().then(e => Promise.reject(e))
+              : res.json()           
+            )     
+     }
 }
 
 export default DataAPiService;

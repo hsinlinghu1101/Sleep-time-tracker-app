@@ -6,22 +6,36 @@ import DataAPiService from '../../Services/data-api-service';
 
 
 export default class ResultPage extends React.Component {
-   
+ static defaultProps={
+     match:{
+         params:{}
+     }
+ }  
+ 
 state={
     userData:[]
 }
 
     componentDidMount() {
         
-        DataAPiService.getData()
+    DataAPiService.getData()
          .then(userData=> this.setState({
             userData
          }))  
     }
 
+    handleDeleteData =(dataId)=>{
+        this.props.history.push(`/`)
+    }
+
+
+
     render() {
         
+        
         const {userData} = this.state
+        
+        
         return (
             <main role="main">
                 <header role="banner">
@@ -30,9 +44,11 @@ state={
 
                 </header>
                 {userData.map(data => {
+                    
                     let hours = (new Date(data.wakeup_time) - new Date(data.bed_time))/1000/60/60
                     let message;
                     let age;
+                    console.log(data)
                     if(age === 1) {
                         if(hours < 8){
                             message=' You need more sleep ! '
@@ -59,8 +75,13 @@ state={
                         }
                     }
                     return( 
-                    <Result date={format(data.data_created, 'Do MMM YYYY')} 
-                     hours={hours} message={message} />
+                    <Result 
+                    key={data.id} 
+                    id={data.id} 
+                    date={format(data.data_created, 'Do MMM YYYY')} 
+                    hours={hours} 
+                    message={message}
+                    onDeleteData={this.handleDeleteData} />
                 )})}
 
             </main>

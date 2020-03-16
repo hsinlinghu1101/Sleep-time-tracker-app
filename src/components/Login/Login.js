@@ -12,29 +12,23 @@ export default class Login extends React.Component{
 
    state={
      error:null,
-     name:''
+     //user_name:''
    }
 
-  /*sendName=(event)=>{
+  onUsernameChange=(name)=>{
     this.setState({
-      name:event.target.name.value
+      user_name:name
     })
-  }*/
+  }
 
-   sendName=(name)=>{
-    this.setState({
-      name
-    })
-      name = this.props.getName
-    }
-
+   
     handleSubmit=(e)=>{
       e.preventDefault();
     this.setState({error:null})
     
      const{ user_name, password}=e.target
 
-    
+    //this.props.onUsernameChange(this.state.user_name)
     AuthApiService.postLogin({
       user_name:user_name.value, 
       password:password.value
@@ -47,6 +41,7 @@ export default class Login extends React.Component{
      password.value=''
      this.props.onLoginSuccess(data.user_id)
     })
+   
     .catch(res =>{
       this.setState({
           error:res.error
@@ -57,7 +52,7 @@ export default class Login extends React.Component{
 
     
     render(){
-      const { error, name }= this.state
+      const { error }= this.state
         return(
             <main role="main">
             <header>
@@ -67,7 +62,7 @@ export default class Login extends React.Component{
             {error && <p className='red'>{error}</p>}
                 <div>
                   <label htmlFor="name">Name</label>
-                  <input placeholder='Name' type="text" name='user_name' id='name' value={name} onChange={(e)=>this.sendName(e.target.value)} required />
+                  <input placeholder='Name' type="text" name='user_name' id='name' required />
                 </div>
                 <div>
                   <label htmlFor="password">Password</label>

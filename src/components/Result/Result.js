@@ -1,18 +1,41 @@
 import React from 'react'
+import DataAPiService from '../../Services/data-api-service';
 
-export default function Result(props){
-    
-   
-        return(
-            <section>      
-              <h2>'{props.date}' - You got '{props.hours}' hours of sleep </h2>
+
+export default class Result extends React.Component{
+   static defaultProps={
+      onDeleteData:()=>{}
+   }
+   state={
+     error:null
+   }
+  
+  handleClickDelete=(event)=>{
+     event.preventDefault();
+   let dataId =this.props.id
+
+   DataAPiService.deleteData(dataId)
+    .then(()=>{
+      this.props.onDeleteData(dataId)
+    })
+    .catch(res=> this.setState({
+      error:JSON.stringify(res.error)
+    }))
+   }
         
-              <p>{props.message}</p>
-              <button>Edit</button>
-              <button>Delete</button>
-            </section>
+  
+  render(){
+
+  return(
+      <section>      
+        <h2>'{this.props.date}' - You got '{this.props.hours}' hours of sleep </h2>
+  
+       <p>{this.props.message}</p>
+        <button>Edit</button>
+        <button onClick={this.handleClickDelete}>Delete</button>
+      </section>
            
           
         )
-    
+  }  
 }

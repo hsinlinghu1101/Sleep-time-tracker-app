@@ -10,16 +10,17 @@ import ResultPage from '../Result/ResultPage'
 import NotFound from '../NotFound/NotFound'
 
 import './App.css';
+const UsernameContext = React.createContext('');
 
 export default class App extends React.Component{
  
 state={
-  name:''
+  user_name:''
 }
 
-setName=(name)=>{
+onUsernameChange=(name)=>{
   this.setState({
-    name
+    user_name:name
   })
 }
  
@@ -28,14 +29,17 @@ setName=(name)=>{
   return (
     <div className="App">
      <Header />
+     <UsernameContext.Provider>
      <Switch>
      <Route exact path='/' component={Landing}/>
-     <Route path='/login' render={()=><LoginPage getName={this.setName}/>}/>
+     {/*<Route path='/login' render={()=><LoginPage onUsernameChange={this.onUsernameChange}/>}/>*/}
+     <Route path='/login' component={LoginPage}/>
      <Route path='/register' component={RegisterationPage}/>
      <Route path='/user/:user_id' component={HomePage}/>
      <Route path='/data/:user_id' component={ResultPage}/>
      <Route component={NotFound}/>
      </Switch>
+     </UsernameContext.Provider>
      <Footer/>
     </div>
   );
