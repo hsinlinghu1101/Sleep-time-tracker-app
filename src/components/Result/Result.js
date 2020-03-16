@@ -11,16 +11,19 @@ export default class Result extends React.Component{
    }
   
   handleClickDelete=(event)=>{
+    console.log('hello')
      event.preventDefault();
    let dataId =this.props.id
 
    DataAPiService.deleteData(dataId)
     .then(()=>{
-      this.props.onDeleteData(dataId)
+      this.props.onDeleteData(dataId) 
     })
+    
     .catch(res=> this.setState({
       error:JSON.stringify(res.error)
     }))
+    
    }
         
   
@@ -32,7 +35,7 @@ export default class Result extends React.Component{
   
        <p>{this.props.message}</p>
         <button>Edit</button>
-        <button onClick={this.handleClickDelete}>Delete</button>
+        <button onClick={this.handleClickDelete}>Remove</button>
       </section>
            
           

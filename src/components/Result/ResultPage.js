@@ -9,7 +9,10 @@ export default class ResultPage extends React.Component {
  static defaultProps={
      match:{
          params:{}
-     }
+     },
+     history:{
+        push:()=>{}
+    }
  }  
  
 state={
@@ -25,7 +28,13 @@ state={
     }
 
     handleDeleteData =(dataId)=>{
-        this.props.history.push(`/`)
+        DataAPiService.getData()
+        .then(userData=> this.setState({
+           userData
+        }))  
+   
+       console.log('hi')
+      
     }
 
 
