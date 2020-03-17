@@ -36,8 +36,8 @@ const DataAPiService={
             )     
      },
      deleteData(dataId){
-         if(window.confirm('Are you sure?'))
-         {
+        
+         
          return fetch(`${config.API_ENDPOINT}/data/${dataId}`, {
              method:'DELETE',
              headers:{
@@ -49,21 +49,10 @@ const DataAPiService={
          .then(res =>
             (!res.ok)
               ? res.json().then(e => Promise.reject(e))
-              : res.json()           
+              : undefined           
             )     
-     }else{
-        return fetch(`${config.API_ENDPOINT}/data/my`, {
-            headers:{
-                'Authorization': `bearer ${TokenService.getAuthToken()}`
-            }
-        })
-        .then(res =>
-            (!res.ok)
-            ? res.json().then(e => Promise.reject(e))
-            : res.json()
-        )
      }
-    }
 }
+
 
 export default DataAPiService;

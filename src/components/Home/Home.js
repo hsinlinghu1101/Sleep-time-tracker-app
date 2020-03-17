@@ -51,34 +51,35 @@ export default class Home extends React.Component{
     render(){
       const { error } = this.state
         return(
-         
+          
+          
             <main role="main">
-            <header>
-              <NavBar/>
-              <h1>Hi, {this.props.user_name} -Create New Record</h1>
+            <NavBar name={this.props.name}/>
+              
+              <h2>Create New Record</h2>
               {error && <p>{error}</p>}
              
-            </header>
-            <section>
-              <form id="sleep-record" onSubmit={this.handleRecordSubmit}>
+            
+              <form className="sleep-record" onSubmit={this.handleRecordSubmit}>
                 <div className="form-section">
-                  <section>
-                  <label htmlFor="getDate">Date - go to bed</label>
-                  <input type="date" id="data_created" name="data_created" required/>
+                <div>
+                  <label htmlFor="getDate">Date - Go to Bed: </label>
+                  <input type="date" id="data_created" name="data_created" required/><br></br>
                   <label htmlFor="bed-time">Go to Bed time: </label>
                   <input id="bed-time" type="time" name="bed_time" required/>
-                  </section>
-                  <section>
-                  <label htmlFor="getDate">Date - wake up</label>
-                  <input type="date" id="data_wakeup" name="data_wakeup" required/>
+                  </div>
+                  <div>
+                  <label htmlFor="getDate">Date - Wake Up: </label>
+                  <input type="date" id="data_wakeup" name="data_wakeup" required/><br></br>
                   <label htmlFor="wakeup-time">Wake up time: </label>
                   <input id="wakeup-time" type="time" name="wakeup_time" required/>
-                  </section>
-                <button type="submit">Submit</button>
+                  </div>
+                <button className='btn add' type="submit">Submit</button>
                 </div>
               </form>
-            </section>
+
           </main>
+          
           
         )
     }

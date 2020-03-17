@@ -1,6 +1,6 @@
 import React from 'react'
 import Register from './Register'
-
+import './Register.css' 
 export default class RegistrationPage extends React.Component {
     static defaultProps={
         history:{

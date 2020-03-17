@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import TokenService from '../../Services/token-service';
+import './NavBar.css'
 export default class NavBar extends React.Component{
     
 
@@ -11,8 +12,10 @@ export default class NavBar extends React.Component{
     render(){
     
     return (     
-        <nav role="navigation">        
-            <Link onClick={this.handleLogout}to='/'> Logout </Link>
+        <nav role="navigation"> 
+            <div className="nav">Hi, {this.props.name}
+              <div className="logout"><Link onClick={this.handleLogout}to='/'> Logout </Link></div>
+            </div>      
         </nav>
 
       

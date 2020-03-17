@@ -42,17 +42,14 @@ export default class Register extends React.Component{
         return(
             <main role="main">
       
-            <header>
-                <h3>New User</h3>
-            </header>
+                <h3>Create an Account</h3>
+            
             <form className='signup-form' onSubmit={this.handleNewUser}>
             {error && <p>{error}</p>}
                 <div>   
-                  <label htmlFor="name">User Name</label>
-                  <input placeholder='Name' type="text" name='user_name' id='name' required/>
-                </div>
-                <div>
-                  <label htmlFor="age">Age</label>
+                  <label htmlFor="name">User Name: </label>
+                  <input placeholder='Name' type="text" name='user_name' id='name' required/><br></br>
+                  <label htmlFor="age">Age: </label>
                   <select name='user_age' id='age'  required>
                     <option>find your age</option>
                     <option value='1'>14-17 year old</option>
@@ -61,12 +58,13 @@ export default class Register extends React.Component{
                   </select>
                 </div>
                 <div>
-                  <label htmlFor="password">Password</label>
+                  <label htmlFor="password">Password: </label>
                   <input type="password" name='password' id='password' placeholder="password"  required/>
+                  <p className='des'>(Password must have at least 9 characters and contain 1 upper case, lower case, number and special character)</p>
                 </div>
                 
-                <button type='submit'>Sign Up</button>
-                <Link to='/'>Cancel</Link>
+                <button className='btn register' type='submit'>Sign Up</button>
+                <div className='btn'><Link to='/'>Cancel</Link></div>
             </form>
             </main>
             )

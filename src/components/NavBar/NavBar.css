@@ -1,0 +1,9 @@
+
+.nav{
+    display: flex;
+    width:80%;
+    background-color: #0b409c;
+}
+.logout{
+   margin-right: 0;
+}

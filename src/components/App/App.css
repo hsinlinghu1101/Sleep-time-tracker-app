@@ -1,20 +1,26 @@
 * {
   box-sizing: border-box;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color:#f2f7ff;
+  
+  text-decoration: none;
 }
 
 body {
+  background-color: #10316b;
   font-family: "Open Sans",
   sans-serif;
-  font-size: 20px;
-  color: #444;
-  text-align: center;
-  line-height: 1.5;
+  
+  font-size: 16px;
+  line-height: 1.5;  
 }
 
 nav,
 footer {
   padding: 1% 0;
-  background-color: #aaa;
+  background-color: #0b409c;
 }
 
 nav {
@@ -25,25 +31,31 @@ nav {
   z-index: 10;
 }
 
+footer{
+  color:#f2f7ff;
+  font-size: 14px;
+  padding:20px;
+  bottom:0;
+  position: fixed;
+  width: 100%;
+}
+
 header {
-  padding: 45px 15px;
+  padding: 30px 15px;
 }
 
 section {
-  min-height: 200px;
-  padding: 30px 15px;
-  background-color: #bbb;
+  
+  min-height: 180px;
+  padding: 10px 15px;
+  border:1px #ffe867;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 section:nth-child(even) {
-  background-color: #ddd;
+  
 }
 
-p {
-  margin: 0 auto;
-  max-width: 650px;
-}
 
-p + p {
-  margin-top: 15px;
-}
+

@@ -7,35 +7,56 @@ export default class Result extends React.Component{
       onDeleteData:()=>{}
    }
    state={
-     error:null
+     error:null,
+     confirm: false
    }
   
+   handleConfirm=()=>{
+     this.setState({
+       confirm: true
+     })
+   }
+
+   handleCancel=()=>{
+    this.setState({
+      confirm: false
+    })
+   }
   handleClickDelete=(event)=>{
-    console.log('hello')
+    
      event.preventDefault();
    let dataId =this.props.id
 
    DataAPiService.deleteData(dataId)
     .then(()=>{
+      console.log('hello')
       this.props.onDeleteData(dataId) 
     })
-    
+    .then(this.render())
     .catch(res=> this.setState({
       error:JSON.stringify(res.error)
     }))
+    
     
    }
         
   
   render(){
-
+   
   return(
       <section>      
-        <h2>'{this.props.date}' - You got '{this.props.hours}' hours of sleep </h2>
+        <h2>'{this.props.date}'  {this.props.hours} hours of sleep </h2>
   
-       <p>{this.props.message}</p>
-        <button>Edit</button>
-        <button onClick={this.handleClickDelete}>Remove</button>
+       <p className='message'>{this.props.message}</p>
+        
+        {
+          this.state.confirm? 
+          (<div><button className='btn data' onClick={this.handleClickDelete}>Are you sure</button>
+           <button className='btn data' onClick={this.handleCancel}>Cancel</button></div>)
+             : 
+           (<button className='btn data' onClick={this.handleConfirm}>Remove</button>)
+        }
+       
       </section>
            
           
