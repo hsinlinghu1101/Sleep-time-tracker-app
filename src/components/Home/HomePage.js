@@ -16,7 +16,6 @@ export default class HomePage extends React.Component{
        
         const { user_id }= this.props.match.params
         const {history} = this.props
-        console.log(history)
         history.push(`/data/${user_id}`)
     }
     render(){

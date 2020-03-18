@@ -8,3 +8,13 @@ h3{
     display: inline-block;
     
 }
+
+.sleep{
+    max-width: 50%;
+}
+.one{
+    float:left;
+}
+.empty{
+    font-size: 80px;
+}

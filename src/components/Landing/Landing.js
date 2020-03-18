@@ -1,13 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import sleep1 from '../../image/sleep1.jpg';
+import sleep2 from '../../image/sleep2.jpg'
 import './Landing.css'
 
 export default function Landing(){
     return(
     <main role="main">
       <section>
-        <img src="./image/sleep1.jpg" alt="sleep-left"/>
-        <img src="./image/sleep2.jpg" alt="sleep-right"/>
+        <img className='sleep one' src={sleep1} alt="sleep-left"/>
+        <p className='empty'></p>
+        <img  className='sleep two' src={sleep2} alt="sleep-right"/>
       </section>
       <section>
         <div>

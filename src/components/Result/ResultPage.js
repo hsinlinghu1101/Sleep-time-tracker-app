@@ -60,27 +60,27 @@ state={
                     
                     if(age === 1) {
                         if(hours < 8){
-                            message='Oh-Ah! You cannot think well, love well, dined well, if you has not sleep well. '
+                            message='Uh-oh! You cannot think Well, eat Well and play Well, if you did not sleep Well! '
                         }else if (hours >=8 && hours <=10){
                             message='Awesome! You had enough sleep!'
                         }else{
-                            message="Life is something that happens when you aren't sleeping"
+                            message="If you want your dreams to come true, don't oversleep next time!"
                         }
                     }else if(age === 2 ){
                         if(hours < 7){
-                            message=' Oh-Ah! You need more sleep!  '
+                            message='Uh-oh! You cannot think Well, eat Well and play Well, if you did not sleep Well!  '
                         }else if (hours >=7 && hours <=9){
-                            message='Awesome! You had enough sleep'
+                            message='Awesome! You had enough sleep!'
                         }else{
-                            message="Life is something that happens when you aren't sleeping"
+                            message="If you want your dreams to come true, don't oversleep next time!"
                         }
                     }else{
                         if(hours < 7){
-                            message=' Oh-Ah! You need more sleep!  '
+                            message=' Uh-oh! You cannot think Well, eat Well and play Well, if you did not sleep Well!  '
                         }else if (hours >=7 && hours <=8){
-                            message='Awesome! You had enough sleep'
+                            message='Awesome! You had enough sleep!'
                         }else{
-                            message="Life is something that happens when you aren't sleeping"
+                            message="If you want your dreams to come true, don't oversleep next time!"
                         }
                     }
                     return( 
