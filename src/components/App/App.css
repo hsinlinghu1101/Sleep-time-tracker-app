@@ -54,8 +54,52 @@ section {
   margin-right: 5%;
 }
 
-section:nth-child(even) {
-  
+@media screen and (min-width: 481px){
+  header {
+    font-size: 25px;
+  }
+  .landingImg{
+    margin-bottom: 50px;
+  }
+  section{
+     width: 50%;
+     margin-left: auto;
+     margin-right: auto;
+  }
+  .sleep{
+    max-width: 50%;
+}
+
+    .empty{
+        font-size: 60px;
+    }
+    h3{
+      font-size: 25px;
+    }
+    p{
+      font-size: 18px;
+    }
+    .end{
+      height: 80px;
+    }
+    .signup-form{  
+      width:50%;
+  }
+  .des{
+    font-size: 13px;
+    width: 60%;
+  }
+  .login-form{
+    width:50%;
+  }
+  .sleep-record{
+    width:50%;
+  }
+  #daily{
+    font-size: 35px;
+    font-family: 'Lobster', cursive;
+  }
+
 }
 
 

@@ -1,6 +1,36 @@
 .data{
     background-color: #10316b;
+    border-color: #f2f7ff;
 }
 .message{
     font-family: 'Marcellus SC', serif;
+}
+.end{
+    height: 50px;
+}
+
+.mesA{
+  color:rgb(247, 81, 81);
+}
+.mesB{
+    color: rgb(45, 231, 7);
+}
+.mesC{
+    color: yellow;
+}
+
+.font{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+}
+.top{
+    width:60%;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-width: thick;
+    border-bottom: darkgray ;
+    border-style: dotted;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
 }

@@ -47,8 +47,9 @@ export default class Result extends React.Component{
       <section>      
         <h2>'{this.props.date}'  {this.props.hours} hours of sleep </h2>
   
-       <p className='message'>{this.props.message}</p>
-        
+       <p className='mesA font'>{this.props.messageA}</p>
+        <p className='mesB font'>{this.props.messageB}</p>
+        <p className='mesC font'>{this.props.messageC}</p>
         {
           this.state.confirm? 
           (<div><button className='btn data' onClick={this.handleClickDelete}>Are you sure</button>

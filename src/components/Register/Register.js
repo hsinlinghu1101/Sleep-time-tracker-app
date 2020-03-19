@@ -51,10 +51,10 @@ export default class Register extends React.Component{
                   <input placeholder='Name' type="text" name='user_name' id='name' required/><br></br>
                   <label htmlFor="age">Age: </label>
                   <select name='user_age' id='age'  required>
-                    <option>find your age</option>
-                    <option value='1'>14-17 year old</option>
-                    <option value='2'>18-64 years</option>
-                    <option value='3'>above 65 years</option>
+                    <option id='age'>find your age</option>
+                    <option id='age' value='1'>14-17 year old</option>
+                    <option id='age' value='2'>18-64 years</option>
+                    <option id='age' value='3'>above 65 years</option>
                   </select>
                 </div>
                 <div>
@@ -66,6 +66,7 @@ export default class Register extends React.Component{
                 <button className='btn register' type='submit'>Sign Up</button>
                 <div className='btn'><Link to='/'>Cancel</Link></div>
             </form>
+            <div className='end'></div>
             </main>
             )
     }
