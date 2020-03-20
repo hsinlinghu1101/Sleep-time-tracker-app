@@ -33,8 +33,6 @@ state={
         .then(userData=> this.setState({
            userData
         }))  
-   
-       console.log('hi') 
     }
 
    

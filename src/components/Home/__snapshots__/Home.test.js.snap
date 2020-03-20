@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<main
+  role="main"
+>
+  <nav
+    role="navigation"
+  >
+    <div
+      className="nav"
+    >
+      Hi, 
+      <div
+        className="logout"
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+           Logout 
+        </a>
+      </div>
+    </div>
+  </nav>
+  <h2>
+    Create New Record
+  </h2>
+  <form
+    className="sleep-record"
+    onSubmit={[Function]}
+  >
+    <div
+      className="form-section"
+    >
+      <div>
+        <label
+          htmlFor="getDate"
+        >
+          Date - Go to Bed: 
+        </label>
+        <input
+          id="data_created"
+          name="data_created"
+          required={true}
+          type="date"
+        />
+        <br />
+        <label
+          htmlFor="bed-time"
+        >
+          Go to Bed time: 
+        </label>
+        <input
+          id="bed-time"
+          name="bed_time"
+          required={true}
+          type="time"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="getDate"
+        >
+          Date - Wake Up: 
+        </label>
+        <input
+          id="data_wakeup"
+          name="data_wakeup"
+          required={true}
+          type="date"
+        />
+        <br />
+        <label
+          htmlFor="wakeup-time"
+        >
+          Wake up time: 
+        </label>
+        <input
+          id="wakeup-time"
+          name="wakeup_time"
+          required={true}
+          type="time"
+        />
+      </div>
+      <button
+        className="btn add"
+        type="submit"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</main>
+`;

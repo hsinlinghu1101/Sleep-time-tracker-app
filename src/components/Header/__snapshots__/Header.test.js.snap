@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<header
+  role="banner"
+>
+  <h1
+    className="title"
+  >
+    Sleep Time Tracker
+  </h1>
+</header>
+`;

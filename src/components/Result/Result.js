@@ -29,7 +29,6 @@ export default class Result extends React.Component{
 
    DataAPiService.deleteData(dataId)
     .then(()=>{
-      console.log('hello')
       this.props.onDeleteData(dataId) 
     })
     .then(this.render())
@@ -52,7 +51,7 @@ export default class Result extends React.Component{
         <p className='mesC font'>{this.props.messageC}</p>
         {
           this.state.confirm? 
-          (<div><button className='btn data' onClick={this.handleClickDelete}>Are you sure</button>
+          (<div><button className='btn data' onClick={this.handleClickDelete}>Are you sure ?</button>
            <button className='btn data' onClick={this.handleCancel}>Cancel</button></div>)
              : 
            (<button className='btn data' onClick={this.handleConfirm}>Remove</button>)

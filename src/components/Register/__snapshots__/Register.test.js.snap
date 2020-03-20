@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<main
+  role="main"
+>
+  <h3>
+    Create an Account
+  </h3>
+  <form
+    className="signup-form"
+    onSubmit={[Function]}
+  >
+    <div>
+      <label
+        htmlFor="name"
+      >
+        User Name: 
+      </label>
+      <input
+        id="name"
+        name="user_name"
+        placeholder="Name"
+        required={true}
+        type="text"
+      />
+      <br />
+      <label
+        htmlFor="age"
+      >
+        Age: 
+      </label>
+      <select
+        id="age"
+        name="user_age"
+        required={true}
+      >
+        <option
+          id="age"
+        >
+          find your age
+        </option>
+        <option
+          id="age"
+          value="1"
+        >
+          14-17 year old
+        </option>
+        <option
+          id="age"
+          value="2"
+        >
+          18-64 years
+        </option>
+        <option
+          id="age"
+          value="3"
+        >
+          above 65 years
+        </option>
+      </select>
+    </div>
+    <div>
+      <label
+        htmlFor="password"
+      >
+        Password: 
+      </label>
+      <input
+        id="password"
+        name="password"
+        placeholder="password"
+        required={true}
+        type="password"
+      />
+      <p
+        className="des"
+      >
+        (Password must have at least 9 characters and contain 1 upper case, lower case, number and special character)
+      </p>
+    </div>
+    <button
+      className="btn register"
+      type="submit"
+    >
+      Sign Up
+    </button>
+    <div
+      className="btn"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Cancel
+      </a>
+    </div>
+  </form>
+  <div
+    className="end"
+  />
+</main>
+`;

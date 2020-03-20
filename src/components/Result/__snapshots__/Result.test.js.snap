@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<section>
+  <h2>
+    '
+    '  
+     hours of sleep 
+  </h2>
+  <p
+    className="mesA font"
+  />
+  <p
+    className="mesB font"
+  />
+  <p
+    className="mesC font"
+  />
+  <button
+    className="btn data"
+    onClick={[Function]}
+  >
+    Remove
+  </button>
+</section>
+`;

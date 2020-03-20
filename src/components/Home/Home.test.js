@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './Header';
+import Home from './Home';
+import {MemoryRouter as Router} from 'react-router-dom'
 import renderer from 'react-test-renderer';
 
-describe('Header', ()=>{
+describe('Home', ()=>{
   it('renders without crashing', () => {
     
     const div = document.createElement('div');
    
-    ReactDOM.render(<Header/>, div);
+    ReactDOM.render(<Router><Home /></Router>, div);
   
     ReactDOM.unmountComponentAtNode(div);
   });
@@ -16,7 +17,7 @@ describe('Header', ()=>{
 it('renders the UI as expected', () => {
   const tree = renderer
     .create(
-        <Header/>
+        <Router><Home/></Router>    
     )
     .toJSON();
   expect(tree).toMatchSnapshot();

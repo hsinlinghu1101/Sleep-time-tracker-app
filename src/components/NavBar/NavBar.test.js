@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter} from 'react-router-dom'
+import {MemoryRouter as Router} from 'react-router-dom'
 import NavBar from './NavBar';
 
 describe('NavBar', ()=>{
@@ -9,9 +9,9 @@ describe('NavBar', ()=>{
     const div = document.createElement('div');
    
     ReactDOM.render(
-    <BrowserRouter>
+    <Router>
     <NavBar/>
-    </BrowserRouter>, div);
+    </Router>, div);
   
     ReactDOM.unmountComponentAtNode(div);
   });
