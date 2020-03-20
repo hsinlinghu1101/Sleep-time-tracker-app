@@ -4,6 +4,8 @@ Link to live app: https://build-five-alpha.now.sh/
 
 Screenshot(s) of your app. This makes your app description much easier to understand.
 
+![s1](https://user-images.githubusercontent.com/47201201/77196462-a1cb7a80-6aa0-11ea-8cea-bd4e47d9642b.png)
+
 A summary section-
 
 When you woke up in the morning and felt restless, did you wonder when did you go to sleep last night? Did you wonder how many hours of sleep you had yesterday, or the day before to reconcile the total amount of hours slept to your feeling of being fresh and productive during those days? Sleep tracker is here to help!
