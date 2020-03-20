@@ -1,7 +1,25 @@
-Sleep Time Tracker
+Name of the App: Sleep Time Tracker
+
 Link to live app: https://build-five-alpha.now.sh/
 
-Screenshot(s) of your app. This makes your app description much easier to understand.
+How to use the App -
+
+If you are a new user, please register an account.
+
+![s1](https://user-images.githubusercontent.com/47201201/77196838-5c5b7d00-6aa1-11ea-9a44-2be11bd5dea5.png)
+
+If you already have an account please log in
+
+![s2](https://user-images.githubusercontent.com/47201201/77196847-5d8caa00-6aa1-11ea-9d9c-a9f2ff10929c.png)
+
+Provide the date and time when you went to bed and when you woke up
+
+![s3](https://user-images.githubusercontent.com/47201201/77196849-5f566d80-6aa1-11ea-9dae-cc331e226a65.png)
+
+Get all your record, you can also delete or add record when you log in.
+
+![s4](https://user-images.githubusercontent.com/47201201/77196851-60879a80-6aa1-11ea-9c47-5b205c1f8fa4.png)
+
 
 A summary section-
 
@@ -12,17 +30,25 @@ Sleep is one of our necessities we need in our hectic and rushing world full of 
 The most important reason to track your sleep is that sleep is good for your health, so you need to be sure you're getting enough of it. Research has shown that getting the recommended 7-9 hours per night can:
 
 -Decrease your chance of motor vehicle accidents
+
 -Lessen your likelihood of obesity, since sleep deprivation can increase appetite
+
 -Reduce your risk of diabetes and heart problems
+
 -Improve your concentration, reaction time and memory
+
 -Boost your moods and creativity
+
 -Enhance your immune system to help ward off colds and infections
+
 -Increase regulation of appetite, energy use and weight control
  
 You should track your sleep to help you know what amount feels optimal to you. Hint: it's probably not a full eight hours a night. Although the optimal amount of sleep is between seven to eight hours a night for most people, that's not a universal rule. The optimal amount of sleep varies among individuals, and women tend to need less. Also, you don’t need to track your sleep every night. People who do tend to get too focused on day-to-day variations, which are normal with sleep.
 
 Features:
+
 -keep users daily total sleep hours
+
 -allow for users to delete their record
 
  Technology used -
