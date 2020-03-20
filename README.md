@@ -1,8 +1,8 @@
-Sleep Time Tracker
+Name of the App: Sleep Time Tracker
 
 Link to live app: https://build-five-alpha.now.sh/
 
-Screenshot(s) of your app. This makes your app description much easier to understand.
+How to use the App -
 
 If you are a new user, please register an account.
 
