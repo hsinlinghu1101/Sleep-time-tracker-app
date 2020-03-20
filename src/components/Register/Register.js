@@ -52,9 +52,9 @@ export default class Register extends React.Component{
                   <label htmlFor="age">Age: </label>
                   <select name='user_age' id='age'  required>
                     <option id='age'>find your age</option>
-                    <option id='age' value='1'>14-17 year old</option>
-                    <option id='age' value='2'>18-64 years</option>
-                    <option id='age' value='3'>above 65 years</option>
+                    <option id='age' value='1'>14-17 years old</option>
+                    <option id='age' value='2'>18-64 years old</option>
+                    <option id='age' value='3'>above 65 years old</option>
                   </select>
                 </div>
                 <div>
