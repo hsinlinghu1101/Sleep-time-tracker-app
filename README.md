@@ -4,7 +4,22 @@ Link to live app: https://build-five-alpha.now.sh/
 
 Screenshot(s) of your app. This makes your app description much easier to understand.
 
-![s1](https://user-images.githubusercontent.com/47201201/77196462-a1cb7a80-6aa0-11ea-8cea-bd4e47d9642b.png)
+If you are a new user, please register an account.
+
+![s1](https://user-images.githubusercontent.com/47201201/77196838-5c5b7d00-6aa1-11ea-9a44-2be11bd5dea5.png)
+
+If you already have an account please log in
+
+![s2](https://user-images.githubusercontent.com/47201201/77196847-5d8caa00-6aa1-11ea-9d9c-a9f2ff10929c.png)
+
+Provide the date and time when you went to bed and when you woke up
+
+![s3](https://user-images.githubusercontent.com/47201201/77196849-5f566d80-6aa1-11ea-9dae-cc331e226a65.png)
+
+Get all your record, you can also delete or add record when you log in.
+
+![s4](https://user-images.githubusercontent.com/47201201/77196851-60879a80-6aa1-11ea-9c47-5b205c1f8fa4.png)
+
 
 A summary section-
 
