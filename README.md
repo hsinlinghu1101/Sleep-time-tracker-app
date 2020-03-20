@@ -12,17 +12,25 @@ Sleep is one of our necessities we need in our hectic and rushing world full of 
 The most important reason to track your sleep is that sleep is good for your health, so you need to be sure you're getting enough of it. Research has shown that getting the recommended 7-9 hours per night can:
 
 -Decrease your chance of motor vehicle accidents
+
 -Lessen your likelihood of obesity, since sleep deprivation can increase appetite
+
 -Reduce your risk of diabetes and heart problems
+
 -Improve your concentration, reaction time and memory
+
 -Boost your moods and creativity
+
 -Enhance your immune system to help ward off colds and infections
+
 -Increase regulation of appetite, energy use and weight control
  
 You should track your sleep to help you know what amount feels optimal to you. Hint: it's probably not a full eight hours a night. Although the optimal amount of sleep is between seven to eight hours a night for most people, that's not a universal rule. The optimal amount of sleep varies among individuals, and women tend to need less. Also, you don’t need to track your sleep every night. People who do tend to get too focused on day-to-day variations, which are normal with sleep.
 
 Features:
+
 -keep users daily total sleep hours
+
 -allow for users to delete their record
 
  Technology used -
