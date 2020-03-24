@@ -44,19 +44,19 @@ exports[`renders the UI as expected 1`] = `
           id="age"
           value="1"
         >
-          14-17 year old
+          14-17 years old
         </option>
         <option
           id="age"
           value="2"
         >
-          18-64 years
+          18-64 years old
         </option>
         <option
           id="age"
           value="3"
         >
-          above 65 years
+          above 65 years old
         </option>
       </select>
     </div>

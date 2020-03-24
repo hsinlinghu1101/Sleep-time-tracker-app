@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "sleeptime-app",
+    "alias":"sleep-time-tracker",
     "routes": [
         { "handle": "filesystem" },
         { "src": "/.*", "dest": "/index.html" }
