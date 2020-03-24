@@ -1,6 +1,6 @@
 Name of the App: Sleep Time Tracker
 
-Link to live app: https://build-five-alpha.now.sh/
+Link to live app: https://sleep-time-tracker.now.sh/
 
 How to use the App -
 
@@ -27,7 +27,7 @@ When you woke up in the morning and felt restless, did you wonder when did you g
 
 Sleep is one of our necessities we need in our hectic and rushing world full of stress. Your productivity and quality of life depends on it.  Tracking your sleep will allow you to identify whether or not you are getting enough of it and if it's quality rest. Lack of quality sleep has a detrimental effect on mood, weight loss, exercise performance, recovery, energy, productivity, immune system strength, cardiovascular function and brain health.
 
-The most important reason to track your sleep is that sleep is good for your health, so you need to be sure you're getting enough of it. Research has shown that getting the recommended 7-9 hours per night can:
+The most important reason to track your sleep is that sleep is good for your health, so you need to be sure you're getting enough of it. Research has shown that getting enough sleep can:
 
 -Decrease your chance of motor vehicle accidents
 
@@ -46,6 +46,7 @@ The most important reason to track your sleep is that sleep is good for your hea
 You should track your sleep to help you know what amount feels optimal to you. Hint: it's probably not a full eight hours a night. Although the optimal amount of sleep is between seven to eight hours a night for most people, that's not a universal rule. The optimal amount of sleep varies among individuals, and women tend to need less. Also, you don’t need to track your sleep every night. People who do tend to get too focused on day-to-day variations, which are normal with sleep.
 
 Features:
+-calculated users' total hours of sleep and display a message based on users' age and sleep hours.
 
 -keep users daily total sleep hours
 
