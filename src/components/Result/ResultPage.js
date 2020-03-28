@@ -52,7 +52,7 @@ state={
             </div>  
                 {userData.map(data => {
                     
-                    let hours = (new Date(data.wakeup_time) - new Date(data.bed_time))/1000/60/60
+                    let hours = ((new Date(data.wakeup_time) - new Date(data.bed_time))/1000/60/60).toFixed(1)
                     let messageA;
                     let messageB;
                     let messageC;
