@@ -16,6 +16,7 @@ const AuthApiService ={
       )
   },
   postUser(user){
+    //for posting new users, this isn't a protected endpoint so no need for any tokens.
     return fetch(`${config.API_ENDPOINT}/user`,{
       method: 'POST',
       headers:{

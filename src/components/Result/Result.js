@@ -43,8 +43,11 @@ export default class Result extends React.Component{
   render(){
    
   return(
-      <section>      
-        <h2>'{this.props.date}'  {this.props.hours} hours of sleep </h2>
+      <section className='data'>  
+      <div className='dateTime'>    
+        <h2>{this.props.date}</h2>  
+        <h2>{this.props.hours} hours of sleep </h2>
+      </div>
   
        <p className='mesA font'>{this.props.messageA}</p>
         <p className='mesB font'>{this.props.messageB}</p>

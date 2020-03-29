@@ -25,12 +25,27 @@
 }
 .top{
     width:60%;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
     border-width: thick;
     border-bottom: darkgray ;
     border-style: dotted;
     border-top: hidden;
     border-left: hidden;
     border-right: hidden;
+}
+
+@media screen and (min-width: 481px){
+  .data{
+      max-width: 300px;
+      display: inline-block;
+      margin: 0 10px;
+  }
+  .font{
+    font-size: 14px;
+  }
+  .dateTime{
+      font-size: 15px;
+  }
+  
 }

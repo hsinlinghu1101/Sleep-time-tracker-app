@@ -42,7 +42,7 @@ footer{
 }
 
 header {
-  padding: 30px 15px;
+  padding: 20px 0 0 0;
 }
 
 section {
@@ -96,8 +96,9 @@ section {
     width:50%;
   }
   #daily{
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Lobster', cursive;
+    margin: 0 0 10px 0;
   }
 
 }

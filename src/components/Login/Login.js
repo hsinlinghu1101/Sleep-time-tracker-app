@@ -37,6 +37,7 @@ export default class Login extends React.Component{
     })
    
     .then(data =>{
+    // The JWT handler only stores the token if the request is successful
      TokenService.saveAuthToken(data.authToken)
      user_name.value=''
      password.value=''
