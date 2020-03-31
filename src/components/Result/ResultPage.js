@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import Result from './Result';
 import NavBar from '../NavBar/NavBar'
-import { format } from 'date-fns';
 import DataAPiService from '../../Services/data-api-service';
 import './Result.css'
 
@@ -64,9 +63,8 @@ state={
                     let messageB;
                     let messageC;
                     let age;
-                    if(hours> 24 || hours < 0){
-                       messageA = 'Invalid Data !' 
-                    }
+                    
+                    
                     if(age === 1) {
                         if(hours < 8 && hours > 0){
                             messageA='Uh-oh! You cannot think Well, eat Well and play Well, if you did not sleep Well! '
@@ -92,12 +90,14 @@ state={
                             messageC="If you want your dreams to come true, don't oversleep next time!"
                         }
                     }
+                    const date = new Date(data.data_created) 
                     return( 
+
                     <Result 
                     key={data.id} 
                     id={data.id} 
-                    date={format(data.data_created, 'Do MMM YYYY')} 
-                    hours={hours} 
+                    date={date.toLocaleDateString()} 
+                    hours={hours.toLocaleString()} 
                     messageA={messageA} 
                     messageB ={messageB} 
                     messageC ={messageC}

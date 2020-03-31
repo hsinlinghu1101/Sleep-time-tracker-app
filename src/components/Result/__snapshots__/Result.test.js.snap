@@ -1,12 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders the UI as expected 1`] = `
-<section>
-  <h2>
-    '
-    '  
-     hours of sleep 
-  </h2>
+<section
+  className="data"
+>
+  <div
+    className="dateTime"
+  >
+    <h2 />
+    <h2>
+       hours of sleep 
+    </h2>
+  </div>
   <p
     className="mesA font"
   />
