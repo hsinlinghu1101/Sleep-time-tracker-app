@@ -1,19 +1,19 @@
-import React from 'react'
+import React from 'react';
 import DataAPiService from '../../Services/data-api-service';
-import NavBar from '../NavBar/NavBar'
+import NavBar from '../NavBar/NavBar';
 
 export default class Home extends React.Component{
   
   static defaultProps={
     createDataSuccess:()=>{},
     
-  }
+  };
 
   state={
     error:null,
     data_wakeup:'',
    
-  }
+  };
 
 
   handleRecordSubmit=(event)=>{
@@ -29,7 +29,7 @@ export default class Home extends React.Component{
         error:'Sleeping hours must be between 0 to 24 hours'
       })
       return 
-    }
+    };
 
     DataAPiService.postData({
       data_created: data_created.value,
@@ -54,7 +54,7 @@ export default class Home extends React.Component{
     
     )
       
-  }
+  };
 
   
     render(){
@@ -91,5 +91,5 @@ export default class Home extends React.Component{
           
           
         )
-    }
-}
+    };
+};

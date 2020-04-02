@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import Result from './Result';
 import NavBar from '../NavBar/NavBar'
-import DataAPiService from '../../Services/data-api-service';
+import DataApiService from '../../Services/data-api-service';
 import './Result.css'
 
 export default class ResultPage extends React.Component {
@@ -22,7 +22,7 @@ state={
 
     componentDidMount() {
         
-    DataAPiService.getData()
+    DataApiService.getData()
          .then(userData=> this.setState({
             userData
          })) 
@@ -32,7 +32,7 @@ state={
     }
 
     handleDeleteData =(dataId)=>{
-        DataAPiService.getData()
+        DataApiService.getData()
         .then(userData=> this.setState({
            userData
         }))
@@ -40,8 +40,6 @@ state={
     }
 
    
-
-
 
     render() {
           
@@ -57,7 +55,7 @@ state={
             </div>  
             
                 {userData.map(data => {
-                    
+                    //calculate user's total sleep hours and make sure only one number of digits to appear after the decimal point.
                     let hours = ((new Date(data.wakeup_time) - new Date(data.bed_time))/1000/60/60).toFixed(1)
                     let messageA;
                     let messageB;
@@ -96,7 +94,7 @@ state={
                     <Result 
                     key={data.id} 
                     id={data.id} 
-                    date={date.toLocaleDateString()} 
+                    date={date.toLocaleDateString('en-US', {timeZone: 'UTC'})} 
                     hours={hours.toLocaleString()} 
                     messageA={messageA} 
                     messageB ={messageB} 

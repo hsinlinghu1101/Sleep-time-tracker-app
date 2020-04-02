@@ -1,7 +1,7 @@
 import TokenService from './token-service'
 import config from '../config'
 
-const DataAPiService={
+const DataApiService={
     getData(){
         return fetch(`${config.API_ENDPOINT}/data/my`, {
             headers:{
@@ -55,4 +55,4 @@ const DataAPiService={
 }
 
 
-export default DataAPiService;
+export default DataApiService;

@@ -1,5 +1,5 @@
 import React from 'react'
-import DataAPiService from '../../Services/data-api-service';
+import DataApiService from '../../Services/data-api-service';
 
 
 export default class Result extends React.Component{
@@ -27,7 +27,7 @@ export default class Result extends React.Component{
      event.preventDefault();
    let dataId =this.props.id
 
-   DataAPiService.deleteData(dataId)
+   DataApiService.deleteData(dataId)
     .then(()=>{
       this.props.onDeleteData(dataId) 
     })
@@ -51,8 +51,8 @@ export default class Result extends React.Component{
   
        <p className='mesA font'>{this.props.messageA}</p>
         <p className='mesB font'>{this.props.messageB}</p>
-        <p className='mesC font'>{this.props.messageC}</p>
-        {
+        <p className='mesC font'>{this.props.messageC}</p>  
+        {// confirm with the user to see if they want to remove the data or just click by accident.
           this.state.confirm? 
           (<div><button className='btn data' onClick={this.handleClickDelete}>Are you sure ?</button>
            <button className='btn data' onClick={this.handleCancel}>Cancel</button></div>)
