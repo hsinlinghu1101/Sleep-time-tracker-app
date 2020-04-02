@@ -13,6 +13,7 @@ export default class Login extends React.Component{
 
    state={
      error:null,
+     loading:false,
      user_name:''
    }
 
@@ -26,7 +27,10 @@ export default class Login extends React.Component{
    
     handleSubmit=(e)=>{
       e.preventDefault();
-    this.setState({error:null})
+    this.setState({
+      error:null,
+      loading:true
+    })
     
      const{ user_name, password}=e.target
      
@@ -54,7 +58,7 @@ export default class Login extends React.Component{
 
     
     render(){
-      const { error }= this.state
+      const { error, loading }= this.state
         return(
             <main role="main">
             <header>
@@ -70,7 +74,10 @@ export default class Login extends React.Component{
                   <label htmlFor="password">Password: </label>
                   <input type="password" name='password' id='password' placeholder="password"  required/>
                 </div>
-                <button className='btn login' type='submit'>Login</button>
+                <button className='btn login' type='submit' disabled={loading}>
+                  {loading ? 'Loading ... ': 'Login'}
+      
+                  </button>
                 <div className='btn'><Link to='/'>Cancel</Link></div>
             </form>
            </main>
