@@ -1,23 +1,22 @@
 import React from 'react'
 import Register from './Register'
-import './Register.css' 
+import './Register.css'
 export default class RegistrationPage extends React.Component {
-    static defaultProps={
-        history:{
-            push:()=>{}
+    static defaultProps = {
+        history: {
+            push: () => { }
         }
     }
 
-    handleRegistration=(user)=>{
-        const {history} = this.props
+    handleRegistration = (user) => {
+        const { history } = this.props
         history.push('/login')
     }
-    render(){
-        return(
+    render() {
+        return (
             <div>
-                <Register onRegisterationSuccess={this.handleRegistration}/>
+                <Register onRegisterationSuccess={this.handleRegistration} />
             </div>
         )
     }
-
 }

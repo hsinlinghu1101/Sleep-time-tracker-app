@@ -14,14 +14,14 @@ export default class App extends React.Component{
  
 state={
   user_name:localStorage.user_name || ''
-}
+};
 
 onUserNameChange=(name)=>{
   localStorage.user_name=name
   this.setState({
     user_name:name
   })
-}
+};
  
   render(){
     
@@ -41,6 +41,6 @@ onUserNameChange=(name)=>{
     </div>
   );
 }
-}
+};
 
 

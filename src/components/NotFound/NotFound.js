@@ -7,4 +7,4 @@ export default function NotFound(){
         <p>Try going back to your previous page.</p>
       </section>
     )
-}
+};
