@@ -68,7 +68,7 @@ state={
                             messageA='Uh-oh! You cannot think Well, eat Well and play Well, if you did not sleep Well! '
                         }else if (hours >=8 && hours <=10){
                             messageB='Awesome!You had enough sleep! Keep it up!'
-                        }else if (hours > 10 && hours < 24){
+                        }else if (hours > 10 && hours <= 24){
                             messageC="If you want your dreams to come true, don't oversleep next time!"
                         }
                     }else if(age === 2 ){
@@ -76,7 +76,7 @@ state={
                             messageA='Uh-oh! You cannot think Well, eat Well and play Well, if you did not sleep Well!  '
                         }else if (hours >=7 && hours <=9){
                             messageB='Awesome! You had enough sleep! Keep it up!'
-                        }else if (hours > 9 && hours < 24){
+                        }else if (hours > 9 && hours <= 24){
                             messageC="If you want your dreams to come true, don't oversleep next time!"
                         }
                     }else{
@@ -84,7 +84,7 @@ state={
                             messageA=' Uh-oh! You cannot think Well, eat Well and play Well, if you did not sleep Well!  '
                         }else if (hours >=7 && hours <=8){
                             messageB='Awesome! You had enough sleep!  Keep it up!'
-                        }else if (hours > 8 && hours < 24){
+                        }else if (hours > 8 && hours <= 24){
                             messageC="If you want your dreams to come true, don't oversleep next time!"
                         }
                     }

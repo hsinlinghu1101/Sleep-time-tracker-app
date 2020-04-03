@@ -25,9 +25,15 @@ export default class Home extends React.Component {
     const hours = ((new Date(end) - new Date(start)) / 1000 / 60 / 60).toFixed(1)
 
     //make sure user input the valid data
-    if (hours > 24 || hours < 0) {
+    if ( hours <= 0) {
       this.setState({
-        error: 'Please make sure your date of go to bed time is eariler than your date of wake up time and you should not sleep more than 24 hours'
+        error: 'Oops! You can not wake up before you went to bed'
+      })
+      return
+    };
+    if (hours > 24) {
+      this.setState({
+        error: 'Oops! Unfortunately, you can not enter sleep time more than 24 hours'
       })
       return
     };
@@ -62,7 +68,7 @@ export default class Home extends React.Component {
         <NavBar name={this.props.name} />
 
         <h2>Create New Record</h2>
-        {error && <p>{error}</p>}
+        {error && <p className='error'>{error}</p>}
         <form className="sleep-record" onSubmit={this.handleRecordSubmit}>
           <div className="form-section">
             <div>

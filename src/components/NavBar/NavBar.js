@@ -11,7 +11,6 @@ export default class NavBar extends React.Component {
   render() {
     return (
       <nav role="navigation">
-        {//dispay username after user login}
         <div className="nav">Hi, {this.props.name}
           <div className="logout"><Link onClick={this.handleLogout} to='/'> Logout </Link></div>
         </div>

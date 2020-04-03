@@ -50,7 +50,8 @@ export default class Login extends React.Component {
 
       .catch(res => {
         this.setState({
-          error: res.error
+          error: res.error,
+          loading:false
         })
       })
   }
