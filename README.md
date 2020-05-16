@@ -23,7 +23,7 @@ Get all your record, you can also delete or add record when you log in.
 
 A summary section-
 
-When you woke up in the morning and felt restless, did you wonder when did you go to sleep last night? Did you wonder how many hours of sleep you had yesterday, or the day before to reconcile the total amount of hours slept to your feeling of being fresh and productive during those days? Sleep tracker is here to help!
+When you woke up in the morning and felt restless, did you wonder when did you go to sleep last night? Did you wonder how many hours of sleep you had yesterday, or the day before to reconcile the total amount of hours slept to your feeling of being fresh and productive during those days? Sleep time tracker is here to help!
 
 Sleep is one of our necessities we need in our hectic and rushing world full of stress. Your productivity and quality of life depends on it.  Tracking your sleep will allow you to identify whether or not you are getting enough of it and if it's quality rest. Lack of quality sleep has a detrimental effect on mood, weight loss, exercise performance, recovery, energy, productivity, immune system strength, cardiovascular function and brain health.
 
